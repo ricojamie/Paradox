@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paradox/login.dart';
 
 void main() => runApp(const Paradox());
 
@@ -11,11 +12,11 @@ class Paradox extends StatelessWidget {
         theme: ThemeData(primarySwatch: Colors.deepPurple),
         home: Scaffold(
           appBar: AppBar(
-            title: Text("Paradox"),
+            title: const Text("Paradox"),
           ),
-          body: Center(
-            child: Text("Hello"),
-          ),
+          body: LoginScreen(),
+          // body: const Center(
+          //   child: Text("Hello"),
         ),
       );
 }
